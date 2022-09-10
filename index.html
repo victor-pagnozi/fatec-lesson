@@ -1,18 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Example</title>
-</head>
-<body>
-    <h1>Title</h1>
-</body>
+  </head>
+  <body>
+    <div
+      class="container-fluid h-100 d-flex justify-content-center align-items-center"
+    >
+      <div class="row col-md-8">
+        <div class="container text-center shadow rounded">
+          <h1 class="pt-2">Payment Information</h1>
+          <hr />
 
-<footer>
+          <div class="col-md-12 my-5 d-flex justify-content-center">
+            <div class="form-floating col-4 me-4">
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="John doe"
+              />
+              <label for="email">Name</label>
+            </div>
+            <div class="form-floating col-4">
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="name@example.com"
+              />
+              <label for="email">Email address</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="background-color-bottom"></div>
+  </body>
+
+  <footer>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
-</footer>
+  </footer>
 </html>

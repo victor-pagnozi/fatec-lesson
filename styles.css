@@ -1,0 +1,28 @@
+* {
+  color: rgb(225, 225, 230);
+}
+
+body {
+  background-color: #121214;
+  height: 100vh;
+  z-index: 1;
+}
+
+body .background-color-bottom {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  background-color: #0e0e0f;
+  width: 100vw;
+  height: 65vh;
+  border-top: 1px solid rgb(50, 50, 56);
+}
+
+body .container {
+  background-color: #202024;
+  z-index: 2;
+}
+
+body .container div label {
+  color: #0e0e0f;
+}
