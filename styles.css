@@ -1,4 +1,6 @@
-* {
+*,
+input,
+label {
   color: rgb(225, 225, 230);
 }
 
@@ -23,6 +25,33 @@ body .container {
   z-index: 2;
 }
 
-body .container div label {
-  color: #0e0e0f;
+.form-control {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(111, 111, 114);
+  border-radius: 0;
+  height: 0;
+}
+
+.form-control label,
+.form-control {
+  color: rgb(225, 225, 230);
+}
+
+.form-floating > input:focus {
+  background-color: transparent;
+  color: rgb(225, 225, 230);
+}
+
+.container form {
+  width: 80%;
+}
+
+.line-to-separate {
+  color: rgb(111, 111, 114);
+  transform: rotate(90deg);
+}
+
+.line-to-separate::before {
+  content: '___________________________________';
 }
