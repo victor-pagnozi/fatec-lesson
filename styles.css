@@ -20,6 +20,12 @@ body .background-color-bottom {
   border-top: 1px solid rgb(50, 50, 56);
 }
 
+body .background-color-bottom #fields-to-complete {
+  position: fixed;
+  top: 2%;
+  right: 10%;
+}
+
 body .container {
   background-color: #202024;
   z-index: 2;
@@ -54,4 +60,8 @@ body .container {
 
 .line-to-separate::before {
   content: '___________________________________';
+}
+
+.img-card img {
+  max-width: 40px;
 }

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="libs/toastr/build/toastr.css" />
     <title>Example</title>
   </head>
   <body>
@@ -39,7 +40,6 @@
                 class="form-control"
                 id="email"
                 placeholder="name@example.com"
-                required
               />
               <label for="email">Email address</label>
             </div>
@@ -57,8 +57,10 @@
               <label for="cardNumber">Card Number</label>
             </div>
 
-            <div class="form-floating col-md-1">
-              <label for="">logo cartão</label>
+            <div
+              class="form-floating col-md-1 img-card d-flex align-items-end justify-content-center"
+            >
+              <img src="./assets/mastercard.png" alt="" />
             </div>
 
             <div class="form-floating col-md-2">
@@ -85,18 +87,32 @@
           </div>
 
           <div class="row d-flex justify-content-center mt-5 mb-4">
-            <button type="submit" class="col-lg-1 btn btn-success">Save</button>
-            <button class="col-lg-1 mx-5 btn btn-danger">Cancel</button>
+            <button
+              type="submit"
+              class="col-md-2 mb-4 btn btn-success"
+              onclick="save(event)"
+            >
+              Save
+            </button>
+            <button class="col-md-2 mx-5 mb-4 btn btn-danger" type="button">
+              Cancel
+            </button>
           </div>
         </form>
       </div>
     </div>
 
-    <div class="background-color-bottom"></div>
+    
+    <div class="background-color-bottom">
+      <div id="fields-to-complete">Quantidade de campos: </div>
+    </div>
   </body>
 
   <footer>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="libs/jquery-3.6.1.min.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="libs/toastr/toastr.js"></script>
+    <script src="index.js"></script>
   </footer>
 </html>
