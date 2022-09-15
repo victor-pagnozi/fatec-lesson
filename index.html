@@ -58,7 +58,7 @@
             </div>
 
             <div
-              class="form-floating col-md-1 img-card d-flex align-items-end justify-content-center"
+              class="form-floating col-md-1 img-card d-flex align-items-end justify-content-start"
             >
               <img src="./assets/mastercard.png" alt="" />
             </div>
@@ -74,15 +74,24 @@
               <label for="CVC">CVC</label>
             </div>
 
-            <div class="form-floating col-md-4">
+            <div class="form-floating col-md-2">
               <input
-                type="date"
+                type="text"
                 class="form-control"
                 id="expirationDate"
                 placeholder="Expiration Date"
                 required
               />
               <label for="expirationDate">Expiration Date</label>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="form-floating col-md-5">
+              <label for="">Due Date</label>
+              <select name="dueDate" id="dueDate">
+                <option value="" selected>5</option>
+              </select>
             </div>
           </div>
 
@@ -102,9 +111,8 @@
       </div>
     </div>
 
-    
     <div class="background-color-bottom">
-      <div id="fields-to-complete">Quantidade de campos: </div>
+      <div id="fields-to-complete">Quantidade de campos:</div>
     </div>
   </body>
 
