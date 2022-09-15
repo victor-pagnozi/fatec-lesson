@@ -10,3 +10,14 @@ function save(event) {
 
   toastr.success('Are you the 6 fingered man?');
 }
+
+function populateDueDate() {
+  const selectDueDate = document.getElementById('dueDate');
+  const options = [5, 10, 15, 20, 25];
+
+  options.forEach((option) => {
+    selectDueDate.innerHTML += `<option value="${option}">${option}</option>`;
+  }); //substituir por map para exemplo
+}
+
+populateDueDate();

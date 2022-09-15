@@ -4,6 +4,11 @@ label {
   color: rgb(225, 225, 230);
 }
 
+select,
+option {
+  color: black;
+}
+
 body {
   background-color: #121214;
   height: 100vh;
