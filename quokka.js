@@ -37,6 +37,27 @@ const indexPar = array.findIndex((number) => number % 2 === 0);
 console.log(par);
 console.log(indexPar);
 
+//Filter como o próprio nome indica ele irá filtrar um vetor e irá retornar o array filtrado
+const users = [
+  {
+    name: "Fulano",
+    dueDate: 5,
+  },
+  {
+    name: "Fulano",
+    dueDate: 10,
+  },
+  {
+    name: "Fulano",
+    dueDate: 5,
+  },
+];
+
+const dayFive = users.filter((user) => user.dueDate === 5);
+const dayTen = users.filter((user) => user.dueDate === 10);
+console.log(dayFive.length);
+console.log(dayTen.length);
+
 //**--------------------------------------------------------- */
 const user = {
   name: 'Victor',
